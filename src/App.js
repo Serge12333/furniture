@@ -17,7 +17,7 @@ const App = () => {
       <Header />
       <AnimatePresence exitBeforeEnter>
         <Routes key={location.pathname} location={location}>
-          <Route path="/" element={<Intro />} />
+          <Route path="/furniture" element={<Intro />} />
           <Route path="/intro" element={<Intro />} />
           <Route path="/our-products" element={<OurProducts />} />
           <Route path="/beautiful" element={<Beau />} />
