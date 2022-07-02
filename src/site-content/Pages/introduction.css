@@ -100,7 +100,7 @@
     display: none !important;
   }
 
-  .mainCont{
+  .mainCont {
     padding-top: 80px !important;
     margin-bottom: 35px !important;
   }
@@ -110,7 +110,6 @@
     flex-wrap: wrap;
     gap: 15px;
     align-items: center;
-
   }
 
   .quality .shop {
@@ -127,21 +126,18 @@
     position: relative;
   }
 
-  .slider .innercontent{
+  .slider .innercontent {
     position: absolute;
     top: 50px;
     left: -80px;
   }
-
-  
 }
 
-
-@media (max-width: 504px){
-  .innercontent h6:after{
-    left: 135px !important;
+@media (max-width: 504px) {
+  .innercontent h6:after {
+    left: 155px !important;
   }
-  .shop{
+  .shop {
     padding: 30px !important;
     margin: 0 10px;
   }
