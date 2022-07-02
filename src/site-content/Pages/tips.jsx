@@ -4,8 +4,6 @@ import styled from "styled-components";
 import "./tips.css";
 import AnimatedPage from "./AnimatedPage";
 
-
-
 const MainWrapper = styled.div`
   padding: 44px 0;
 `;
@@ -71,7 +69,7 @@ const Tipsinf = () => {
             {Tips.map((data) => {
               return (
                 <div className="card" key={data.id}>
-                  <img src={data.image} />
+                  <img src={process.env.PUBLIC_URL + "/" + data.image} />
                   <div className="contentHolder">
                     <h4>{data.title}</h4>
                     <p>{data.descrp}</p>
