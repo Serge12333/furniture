@@ -1,0 +1,8 @@
+<Header />
+      <Routes>
+        <Route path="/" element={<Support />} />
+        <Route path="/support/" element={<Support />} />
+        <Route path="/orders" element={<Orders />} />
+        <Route path="/to-do" element={<Todo />} />
+      </Routes>
+      <Footer />

@@ -1,0 +1,13 @@
+
+@media (max-width: 1223px) {
+    .contentHolder{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .contfott{
+        padding-top: 20px !important;
+    }
+    .mainwrp{
+        padding-bottom: 20px !important;
+    }
+}

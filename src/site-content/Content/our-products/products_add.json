@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "image": "./images/first.jpg",
+    "title": "Syltherine",
+    "descrp": "Stylish cafe chair",
+    "price": "RP 2.500.000",
+    "discount": "RP 3.500.000",
+    "tag": "./images/30.png"
+  },
+  {
+    "id": 2,
+    "image": "./images/second.jpg",
+    "title": "Leviosa",
+    "descrp": "Stylish cafe chair",
+    "price": "RP 2.500.000",
+    "discount": "",
+    "tag": ""
+  },
+  {
+    "id": 3,
+    "image": "./images/third.jpg",
+    "title": "Lolito",
+    "descrp": "Luxury big sofa",
+    "price": "RP 7.000.000",
+    "discount": "RP 14.000.000",
+    "tag": "./images/50.png"
+  },
+  {
+    "id": 4,
+    "image": "./images/forth.jpg",
+    "title": "Respira",
+    "descrp": "Minimalist fan",
+    "price": "RP 500.000",
+    "discount": "",
+    "tag": "./images/new.png"
+  }
+]

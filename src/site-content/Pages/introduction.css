@@ -1,0 +1,147 @@
+.dotscustom {
+  list-style: none;
+  position: absolute;
+  top: -70px;
+  margin-left: -325px;
+  display: flex !important;
+  column-gap: 28px;
+}
+
+.dotscustom button {
+  font-size: 0;
+}
+
+.dotscustom li {
+  display: flex;
+  align-items: center;
+}
+
+.dotscustom li button {
+  border: none;
+  outline: none;
+  width: 11px;
+  height: 11px;
+  background: #d8d8d8;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dotscustom li button:hover {
+  background: #e89f71 !important;
+}
+
+.dotscustom .slick-active {
+  margin: 0 -8px;
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid #e89f71;
+  cursor: pointer;
+}
+
+.dotscustom .slick-active button {
+  width: 5px;
+  height: 13px;
+  border-radius: 50%;
+  background: #e89f71;
+  border: 1px solid #e89f71;
+}
+
+.slick-next:before {
+  content: url("../Content/introduction/Right.png");
+}
+
+.slick-prev:before {
+  content: url("../Content/introduction/Right1.png");
+  margin-left: 4px;
+}
+
+.slick-active {
+  cursor: grab;
+}
+
+.modal {
+  font-size: 12px;
+  background-color: antiquewhite;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+@media (max-width: 1509px) {
+  .slick-slider .slick-arrow,
+  .dotscustom {
+    display: none !important;
+  }
+
+  .mainCont{
+    padding-top: 80px !important;
+    margin-bottom: 35px !important;
+  }
+
+  .quality {
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+
+  }
+
+  .quality .shop {
+    position: static !important;
+  }
+
+  .slick-list {
+    width: 100% !important;
+    order: 0;
+  }
+
+  .slider {
+    padding: 295px !important;
+    position: relative;
+  }
+
+  .slider .innercontent{
+    position: absolute;
+    top: 50px;
+    left: -80px;
+  }
+
+  
+}
+
+
+@media (max-width: 504px){
+  .innercontent h6:after{
+    left: 135px !important;
+  }
+  .shop{
+    padding: 30px !important;
+    margin: 0 10px;
+  }
+}

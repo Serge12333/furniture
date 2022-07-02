@@ -1,0 +1,162 @@
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.modal.activemode {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: rgba(255, 227, 168, 0.643) !important;
+  margin: auto;
+  padding: 50px;
+  border: 1px solid #888;
+  width: 65% !important;
+  position: relative;
+  transform: scale(0.5);
+  transition: 0.5s all;
+}
+
+.modal-content.activemode{
+  transform: scale(1);
+}
+
+.modal-content h2 {
+  font-family: "Gilroy";
+  text-align: center;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-content input {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal-content a {
+  margin: 0 auto;
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+  padding: 8px 20px;
+  background-color: orange;
+  color: white;
+  transition: 0.5s ease-in-out;
+  width: 30%;
+  text-decoration: none;
+}
+
+.modal-content a:hover {
+  background-color: yellow;
+  text-decoration: none;
+  color: rgb(65, 179, 0);
+}
+
+.modal-content p {
+  transform: rotate(45deg);
+  font-size: 40px;
+  color: azure;
+  position: absolute;
+  top: -5px;
+  left: 95%;
+  cursor: pointer;
+}
+
+.modal-content p:hover {
+  color: rgb(166, 175, 175);
+}
+
+.form_window {
+  padding: 20px;
+  width: 350px;
+  background: #b8923f;
+  border-radius: 5px;
+  position: fixed;
+  top: 315px;
+  right: -350px;
+  transition: 1s ease-in-out;
+  z-index: 2;
+}
+
+.form_window h2 {
+  text-align: left;
+  font-size: 25px;
+  color: rgb(224, 224, 224);
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(133, 133, 133);
+}
+
+form input {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+input::placeholder {
+  font-family: "Gilroy";
+}
+
+form a {
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: 8px 0px;
+  background-color: #a4c025;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+form a:hover {
+  background-color: #7a45db;
+  text-decoration: none;
+  color: white;
+}
+
+form button:hover {
+  background: #4777d1;
+}
+
+.open {
+  content: "Open";
+  position: absolute;
+  top: 15.5%;
+  left: -89px;
+  padding: 8px 40px;
+  font-family: "Karla";
+  font-size: 25px;
+  text-align: left;
+  cursor: pointer;
+  transform: rotate(-90deg);
+  background: #bea201;
+  color: #ffffff;
+}
+
+
+@media (max-width: 900px){
+  .modal-content p{
+    left: 90%;
+  }
+}

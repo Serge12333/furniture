@@ -1,0 +1,44 @@
+img{
+  cursor: pointer;
+}
+
+@media (max-width: 1677px) {
+  .imgholder {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .imgholder :nth-child(3) {
+    margin: 0 auto !important;
+  }
+
+  .imggrid :nth-child(even) {
+    margin-right: 10px !important;
+  }
+
+  .imggrid :nth-child(odd) {
+    margin-right: 10px !important;
+  }
+  .last-first{
+    margin-bottom: 3px !important;
+  }
+
+  .titlefnr{
+    margin-bottom: 35px !important;
+  }
+}
+
+
+@media (max-width: 700px){
+  .resize{
+    width: 80% !important;
+  }
+
+  .mainwrpfr{
+    padding-bottom: 10px !important;
+  }
+
+  .bg-resize{
+    height: 60% !important;
+  }
+}
