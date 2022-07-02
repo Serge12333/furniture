@@ -65,7 +65,6 @@ const InnerPeace = styled.div`
   align-items: flex-start;
   column-gap: 24px;
   width: 60%;
-  margin-right: 24px;
   position: relative;
   .sliderBeau {
     width: 40%;
