@@ -35,7 +35,7 @@
   }
   .innerpeace {
     flex-wrap: wrap;
-    row-gap: 35px;
+    row-gap: 30px;
     justify-content: center;
     flex-direction: column;
   }
