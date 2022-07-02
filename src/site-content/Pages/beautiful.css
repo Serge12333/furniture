@@ -7,7 +7,7 @@
   column-gap: 28px;
 }
 
-.grwrp{
+.grwrp {
   background-color: #f9f1e7;
 }
 
@@ -20,12 +20,8 @@
 @media (max-width: 1383px) {
   .containerBeau {
     flex-wrap: wrap;
-    gap: 35px !important;
     align-items: center;
     flex-direction: column;
-  }
-  .sliderBeau{
-    width: 80% !important;
   }
 
   .mncotn {
@@ -37,12 +33,10 @@
   .containerBeau .dotscustom {
     display: none !important;
   }
-}
-
-@media (max-width: 561px) {
   .innerpeace {
     flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 35px;
     justify-content: center;
+    flex-direction: column;
   }
 }
