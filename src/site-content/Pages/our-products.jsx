@@ -7,6 +7,7 @@ import like from "./../Content/our-products/Vector.png";
 import "./our-products.css";
 import AnimatedPage from "./AnimatedPage";
 
+
 const MainWrapper = styled.div`
   margin: 0 auto;
   width: 75%;
