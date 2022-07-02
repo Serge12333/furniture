@@ -20,11 +20,12 @@
 @media (max-width: 1383px) {
   .containerBeau {
     flex-wrap: wrap;
-    row-gap: 35px;
+    gap: 35px !important;
     align-items: center;
+    flex-direction: column;
   }
   .sliderBeau{
-    width: 100% !important;
+    width: 80% !important;
   }
 
   .mncotn {
