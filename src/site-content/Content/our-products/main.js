@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Inquiry from "./inq";
 import Arrow from "../Main/arrow.png";
+import aa from "../../../../public/images"
 
 const Mained = styled.div`
   background-color: rgb(178, 213, 207);

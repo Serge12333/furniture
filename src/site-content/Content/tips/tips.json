@@ -1,19 +1,19 @@
 [
   {
     "id": 1,
-    "image": "public/images/indians.png",
+    "image": "images/indians.png",
     "title": "How to create a living room to love",
     "descrp": "20 jan 2020"
   },
   {
     "id": 2,
-    "image": "public/images/mac.png",
+    "image": "images/mac.png",
     "title": "Solution for clean look working space",
     "descrp": "10 jan 2020"
   },
   {
     "id": 3,
-    "image": "public/images/kitchen.png",
+    "image": "../../../../public/images/kitchen.png",
     "title": "Make your cooking activity more fun with good setup",
     "descrp": "20 jan 2020"
   }
