@@ -106,6 +106,7 @@
   }
 
   .quality {
+    text-align: center;
     flex-wrap: wrap;
     gap: 15px;
     align-items: center;

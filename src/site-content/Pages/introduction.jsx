@@ -131,6 +131,7 @@ const Tags = styled.div`
   width: 70%;
   margin: 0 auto;
   padding-bottom: 70px;
+  row-gap: 10px;
 `;
 
 const Badge = styled.div`

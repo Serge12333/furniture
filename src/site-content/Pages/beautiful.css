@@ -23,6 +23,9 @@
     row-gap: 35px;
     align-items: center;
   }
+  .sliderBeau{
+    width: 100% !important;
+  }
 
   .mncotn {
     margin-right: 0px !important;

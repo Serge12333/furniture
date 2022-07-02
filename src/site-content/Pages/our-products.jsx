@@ -7,7 +7,6 @@ import like from "./../Content/our-products/Vector.png";
 import "./our-products.css";
 import AnimatedPage from "./AnimatedPage";
 
-
 const MainWrapper = styled.div`
   margin: 0 auto;
   width: 75%;
@@ -162,7 +161,7 @@ const OurProducts = () => {
           {Products.map((data) => {
             return (
               <div className="card" key={data.id}>
-                <img src={data.image} />
+                <img src={process.env.PUBLIC_URL + "/" + data.image} />
                 <div className="paddin-gap">
                   <h6>{data.title}</h6>
                   <p className="descrp">{data.descrp}</p>
@@ -171,7 +170,10 @@ const OurProducts = () => {
                     <p className="discount">{data.discount}</p>
                   </div>
 
-                  <img className="tag" src={data.tag} />
+                  <img
+                    className="tag"
+                    src={process.env.PUBLIC_URL + "/" + data.tag}
+                  />
                 </div>
                 <div className="hoverBoard">
                   <a href="#" className="mainBtn">
@@ -198,7 +200,7 @@ const OurProducts = () => {
               Products_add.map((data) => {
                 return (
                   <div className="card" key={data.id}>
-                    <img src={data.image} />
+                    <img src={process.env.PUBLIC_URL + "/" + data.image} />
                     <div className="paddin-gap">
                       <h6>{data.title}</h6>
                       <p className="descrp">{data.descrp}</p>
@@ -207,7 +209,7 @@ const OurProducts = () => {
                         <p className="discount">{data.discount}</p>
                       </div>
 
-                      <img className="tag" src={data.tag} />
+                      <img className="tag" src={process.env.PUBLIC_URL + "/" + data.tag} />
                     </div>
                     <div className="hoverBoard">
                       <a href="#" className="mainBtn">
