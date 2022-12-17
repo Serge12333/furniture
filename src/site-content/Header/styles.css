@@ -6,7 +6,7 @@
   display: none;
 }
 
-.activated{
+.activated {
   color: rgb(253, 165, 0) !important;
 }
 
@@ -44,7 +44,7 @@
 
   .responsive_menu {
     display: flex;
-    background: rgb(255, 231, 187);
+    background: rgb(255, 252, 224);
     justify-content: space-between;
     align-items: center;
     width: 100%;

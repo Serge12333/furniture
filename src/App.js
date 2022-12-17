@@ -21,9 +21,9 @@ const App = () => {
           <Route index element={<Intro />} />
           <Route path="/intro" element={<Intro />} />
           <Route path="/our-products" element={<OurProducts />} />
-          <Route path="/beautiful" element={<Beau />} />
+          <Route path="/packages" element={<Beau />} />
           <Route path="/tips" element={<Tipsinf />} />
-          <Route path="/photos" element={<Photos />} />
+          <Route path="/contacts" element={<Photos />} />
         </Routes>
       </AnimatePresence>
       <Footer />

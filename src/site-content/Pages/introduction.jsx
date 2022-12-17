@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Sliderpic from "./../Content/introduction/main-slider.png";
 import arrow from "./../Content/introduction/arrow.png";
+import caravan from "./../Content/introduction/caravan.jpg";
+import solar from "./../Content/introduction/solar.jpg";
+import easun from "./../Content/introduction/easun.jpg";
+import powmr from "./../Content/introduction/powmrr.jpg";
 import cup from "./../Content/introduction/cup.svg";
 import tick from "./../Content/introduction/tick.svg";
 import headphones from "./../Content/introduction/headphone.svg";
@@ -15,9 +18,8 @@ import AnimatedPage from "./AnimatedPage";
 
 const Container = styled.div`
   width: 100%;
-  background-image: linear-gradient(90deg, #f9f1e7 68%, #fcf8f3 60.5%);
   padding-top: 117px;
-  margin-bottom: 104px;
+  margin-bottom: 5px;
   .slick-list {
     width: 92%;
   }
@@ -26,12 +28,12 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
   }
+  .slick-list {
+    margin-top: 80px;
+  }
   .slider {
     background-repeat: no-repeat;
-    padding: 335px 113px 46px 530px;
-    margin-bottom: 150px;
     width: 80%;
-    background-image: url(${Sliderpic});
     margin: 0 auto;
   }
   .innercontent {
@@ -216,36 +218,22 @@ const Intro = () => {
         <Container className="mainCont">
           <div className="quality">
             <div className="shop">
-              <h2>High-Quality Furniture Just For You</h2>
+              <h2>Енергетична автономність для Вас!</h2>
               <p>
-                Our furniture is made from selected and best quality materials
-                that are suitable for your dream home
+                Компанія Kozack Energy спеціалізується на продажу товарів які зроблять
+                ваш дім абсолютно автономним та зручним навіть під час повного
+                блекауту
               </p>
-              <a href="#" id="pickup" onClick={() => setModalActive(true)}>
-                Shop Now
-              </a>
             </div>
             <Slider {...settings} className="slidercontent">
               <div className="slider">
-                <div className="innercontent">
-                  <h5>Bohauss</h5>
-                  <p>Luxury big sofa 2-seat</p>
-                  <h6>Rp 17.000.000</h6>
-                </div>
+                <img src={caravan} alt="caravan" />
               </div>
               <div className="slider">
-                <div className="innercontent">
-                  <h5>Bohauss</h5>
-                  <p>Luxury big sofa 2-seat</p>
-                  <h6>Rp 17.000.000</h6>
-                </div>
+                <img src={solar} alt="caravan" />
               </div>
               <div className="slider">
-                <div className="innercontent">
-                  <h5>Bohauss</h5>
-                  <p>Luxury big sofa 2-seat</p>
-                  <h6>Rp 17.000.000</h6>
-                </div>
+                <img src={easun} alt="easun" />
               </div>
             </Slider>
           </div>
@@ -254,29 +242,22 @@ const Intro = () => {
           <Badge>
             <img src={cup} />
             <div>
-              <h4>High Quality</h4>
-              <p>crafted from top materials</p>
+              <h4>Висока якість</h4>
+              <p>Тільки найкращі товари</p>
             </div>
           </Badge>
           <Badge>
             <img src={tick} />
             <div>
-              <h4>High Quality</h4>
-              <p>crafted from top materials</p>
+              <h4>Перевірені постачальники</h4>
+              <p>Закупка напряму, без посередників</p>
             </div>
           </Badge>
           <Badge>
             <img src={box} />
             <div>
-              <h4>High Quality</h4>
-              <p>crafted from top materials</p>
-            </div>
-          </Badge>
-          <Badge>
-            <img src={headphones} />
-            <div>
-              <h4>High Quality</h4>
-              <p>crafted from top materials</p>
+              <h4>Доставка</h4>
+              <p>Доставка по всій Україні</p>
             </div>
           </Badge>
         </Tags>

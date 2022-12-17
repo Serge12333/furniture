@@ -1,15 +1,10 @@
 import styled from "styled-components";
-import Funiro from "./../Header/Funiro.png";
-import Loopa from "./../Header/loop.svg";
-import Like from "./../Header/love.svg";
-import Cart from "./../Header/Cart.svg";
-import Person from "./../Header/person.svg";
+import Funiro from "./../Header/logo.png";
 import "./styles.css";
 import { NavLink } from "react-router-dom";
 import React, { useState } from "react";
 
 const Main = styled.div`
-  background-image: linear-gradient(90deg, #f9f1e7 68%, #fcf8f3 60.5%);
   width: 100%;
 `;
 
@@ -32,6 +27,9 @@ const Inputs = styled.div`
   display: flex;
   img {
     margin-right: 41px;
+  }
+  logos{
+    max-width:60%;
   }
   ul {
     list-style: none;
@@ -96,20 +94,17 @@ const Header = () => {
       <div className={isActive ? "sidenav activemove" : "sidenav"}>
         <NavLink to="/intro" onClick={closeSideBar}>
           <a href="#" className="sidelink">
-            Introduction
+            Головна
           </a>
         </NavLink>
         <NavLink to="/our-products" onClick={closeSideBar}>
-          <a href="#">Products</a>
+          <a href="#">Товари</a>
         </NavLink>
-        <NavLink to="/beautiful" onClick={closeSideBar}>
-          <a href="#">Inspiration</a>
+        <NavLink to="/packages" onClick={closeSideBar}>
+          <a href="#">Готові рішення</a>
         </NavLink>
-        <NavLink to="/tips" onClick={closeSideBar}>
-          <a href="#">Tips</a>
-        </NavLink>
-        <NavLink to="/photos" onClick={closeSideBar}>
-          <a href="#">Furniture</a>
+        <NavLink to="/contacts" onClick={closeSideBar}>
+          <a href="#">Контакти</a>
         </NavLink>
         <div className="white-line"></div>
       </div>
@@ -132,7 +127,7 @@ const Header = () => {
         <Container>
           <Navigation className="navigation-none">
             <Inputs className="tags-names">
-              <img src={Funiro} alt="funiro" />
+              <img src={Funiro} className="logos" alt="funiro" />
               <ul>
                 <li>
                   <NavLink
@@ -141,48 +136,32 @@ const Header = () => {
                       isActive ? activeClassName : undefined
                     }
                   >
-                   Introduction
+                   Головна
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="/our-products" className={({ isActive }) =>
                       isActive ? activeClassName : undefined
                     }>
-                    Products
+                    Товари
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/beautiful" className={({ isActive }) =>
+                  <NavLink to="/packages" className={({ isActive }) =>
                       isActive ? activeClassName : undefined
                     }>
-                    Inspiration
+                    Готові рішення
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/tips" className={({ isActive }) =>
+                  <NavLink to="/contacts" className={({ isActive }) =>
                       isActive ? activeClassName : undefined
                     }>
-                    Tips
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/photos" className={({ isActive }) =>
-                      isActive ? activeClassName : undefined
-                    }>
-                   Furniture
+                   Контакти
                   </NavLink>
                 </li>
               </ul>
-              <Searchbar>
-                <img src={Loopa} alt="Loopa" />
-                <input type="text" placeholder="Search for minimalist chair" />
-              </Searchbar>
             </Inputs>
-            <Account>
-              <img src={Like} alt="Like" />
-              <img src={Cart} alt="Cart" />
-              <img src={Person} alt="Person" />
-            </Account>
           </Navigation>
         </Container>
       </Main>

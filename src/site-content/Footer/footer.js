@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Funiro from "../Footer/Funiro.png";
+import Funiro from "../Footer/logo.png";
 import Map from "../Footer/map.png";
 import Call from "../Footer/call.png";
 import Envelop from "../Footer/envelope.png";
@@ -12,7 +12,7 @@ const MainWrapper = styled.div`
 `;
 
 const Container = styled.div`
-  padding-top: 80px;
+  padding-top: 40px;
   width: 90%;
   border-top: 1px solid #d8d8d8;
   margin: 0 auto;
@@ -34,7 +34,7 @@ const Column = styled.div`
     font-size: 16px;
     line-height: 150%;
     color: #616161;
-    max-width: 249px;
+    max-width: 100%;
     margin: 0;
   }
   a {
@@ -100,52 +100,18 @@ const Footer = () => {
       <Container className="contfott">
         <ContentHolder className="contentHolder">
           <Column>
-            <a href="#">
-              <img src={Funiro} />
-            </a>
             <p>
-              Worldwide furniture store since 2020. We sell over 1000+ branded
-              products on our website
+             Продаємо інвертори та аккумулятори
             </p>
             <ContentSub>
               <img src={Map} />
-              <p>Sawojajar Malang, Indonesia</p>
+              <p>Україна, м. Запоріжжя, вул. Східна 5а</p>
             </ContentSub>
             <ContentSub>
               <img src={Call} />
-              <a href="tel: +6289 456 3455">+6289 456 3455</a>
+              <a href="tel: +380954941010">+38 (095) 494-10-10</a>
             </ContentSub>
-            <a href="https://www.funiro.com/">www.funiro.com</a>
-          </Column>
-          <Column>
-            <h4>Menu</h4>
-            <a href="#">Products</a>
-            <a href="#">Rooms</a>
-            <a href="#">Inspirations</a>
-            <a href="#">About us</a>
-            <a href="#">Terms and policy</a>
-          </Column>
-          <Column>
-            <h4>Account</h4>
-            <a href="#">My account</a>
-            <a href="#">Checkout</a>
-            <a href="#">My Cart</a>
-            <a href="#">My catalog</a>
-          </Column>
-          <Column>
-            <h4>Stay Connected</h4>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-          </Column>
-          <Column>
-            <h4>Stay Updated</h4>
-            <form>
-              <input type="text" placeholder="Enter your email"></input>
-              <button>
-                <img src={Envelop} />
-              </button>
-            </form>
+            <a href="https://kozack-enegrgy.com.ua/">www.kozack-energy.com.ua</a>
           </Column>
         </ContentHolder>
       </Container>

@@ -1,196 +1,251 @@
 import React from "react";
 import styled from "styled-components";
-import Peace from "../Content/beautiful/pictures.png";
-import Sliderpic from "../Content/beautiful/slider-main.png";
-import Arrow from "../Content/beautiful/arrow.png";
-import Slider from "react-slick";
-import "../../../node_modules/slick-carousel/slick/slick.css";
-import "../../../node_modules/slick-carousel/slick/slick-theme.css";
-import "./beautiful.css";
+import share from "./../Content/our-products/share.png";
+import like from "./../Content/our-products/Vector.png";
+import "./our-products.css";
 import AnimatedPage from "./AnimatedPage";
+import basic from "../Content/our-products/basic.jpg";
+import pro from "../Content/our-products/pro.jpg";
+import blackout from "../Content/our-products/blackout.jpg";
 
-const Mainwrapper = styled.div`
-  background-image: linear-gradient(90deg, #f9f1e7 68%, #fcf8f3 60.5%);
-  padding: 44px 0 70px;
-  margin-bottom: 50px;
-`;
-
-const Container = styled.div`
-  width: 85%;
-  display: flex;
-  justify-content: center;
+const MainWrapper = styled.div`
+  padding-top: 40px;
   margin: 0 auto;
-  align-items: center;
-`;
-
-const Content = styled.div`
-  margin-right: 86px;
-  h2 {
-    max-width: 378px;
+  width: 85%;
+  h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    color: orange;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  h4 {
     font-weight: 700;
     font-size: 40px;
     line-height: 120%;
     color: #3a3a3a;
-    margin: 0px;
-    margin-bottom: 8px;
+    margin-bottom: 50px;
+    text-align: center;
   }
-  p {
-    max-width: 368px;
-    ont-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    color: #616161;
-    margin: 0px;
-    margin-bottom: 24px;
-  }
-  a {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 150%;
-    color: #ffffff;
-    padding: 12px 40px;
-    background: #e89f71;
-    transition: 0.5s ease-in-out;
-    &:hover {
-      background: yellow;
-      color: grey;
+
+  padding-bottom: 0px;
+  .btnContainer {
+    text-align: center;
+    a {
+      align-self: center;
+      padding: 12px 82px;
+      background: #ffffff;
+      border: 1px solid #e89f71;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 150%;
+      color: #e89f71;
+      text-decoration: none;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background: orange;
+        color: white;
+      }
     }
   }
 `;
 
-const InnerPeace = styled.div`
-  display: flex;
-  align-items: flex-start;
-  column-gap: 24px;
-  width: 60%;
-  position: relative;
-  .sliderBeau {
-    width: 40%;
+const Gridwrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  justify-items: center;
+  gap: 32px;
+  margin: 0 auto
+  margin-bottom: 32px;
+  .biginv {
+    width: 87%;
+    margin-bottom: 40px;
   }
-  a {
-    padding: 18px 15px;
-    background: #e89f71;
-    alig-self: center;
-    position: absolute;
-    top: 504px;
-    left: 240px;
-    transition: 0.5s ease-in-out;
-    &:hover {
-      background: grey;
-    }
+  .eass {
+    width: 87%;
+    margin-bottom: 31px;
   }
-  .mainbox {
-    position: absolute;
-    top: 428px;
-    left: 24px;
-    background: rgba(255, 255, 255, 0.72);
-    backdrop-filter: blur(3px);
-    padding: 32px;
-    p {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 150%;
-      color: #616161;
-      margin: 0;
-      margin-bottom: 8px;
+  .blackoutt{
+    width:87%;
+  }
+  .card {
+    .paddin-gap {
+      padding: 0px 31px 30px 16px;
     }
-    h4 {
+    h6 {
       font-weight: 600;
-      font-size: 28px;
+      font-size: 24px;
       line-height: 120%;
       color: #3a3a3a;
       margin: 0px;
+      margin: 40px 0 8px;
+    }
+    .descrp {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      color: #898989;
+      margin: 8px 0;
+    }
+    .priceHolder {
+      display: flex;
+      column-gap: 16px;
+      align-items: center;
+      .price {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        color: #3a3a3a;
+      }
+      .discount {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-decoration-line: line-through;
+        color: #b0b0b0;
+      }
+    }
+    .tag {
+      position: absolute;
+      left: 213px;
+      top: 24px;
+    }
+    .hoverBoard {
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      text-align: center;
+      padding: 165px 0px 316px;
+      background: rgba(58, 58, 58, 0.72);
+      cursor: pointer;
+      .mainBtn {
+        padding: 12px 58px;
+        align-self: center;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: #e89f71;
+        background: #ffffff;
+        margin-bottom: 24px;
+        text-decoration: none;
+        z-index: 1;
+        transition: 0.5s ease-in-out;
+        &:hover {
+          background: orange;
+          color: white;
+        }
+      }
+      .tweaks {
+        display: flex;
+        justify-content: center;
+        column-gap: 50px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 215px;
+        .flex-wrapper {
+          display: flex;
+          align-tems: center;
+          column-gap: 11px;
+          a {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+            color: #ffff;
+            text-decoration: none;
+          }
+          img {
+            align-self: center;
+          }
+        }
+      }
+    }
+    &:hover .hoverBoard {
+      display: none;
     }
   }
 `;
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+const OurProducts = () => {
   return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-        position: "absolute",
-        top: "220px",
-        left: "92%",
-        background: "#E89F71",
-        padding: "15px 17px 21px",
-        borderRadius: "50%",
-      }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "none",
-      }}
-      onClick={onClick}
-    />
-  );
-}
-
-const Beau = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    autoplay: true,
-    dotsClass: "dotscustom",
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-  };
-  return (
-    <div className="grwrp">
-      <AnimatedPage>
-        <Mainwrapper>
-          <Container className="containerBeau">
-            <Content className="mncotn">
-              <h2>50+ Beautiful rooms inspiration</h2>
-              <p>
-                Our designer already made a lot of beautiful prototipe of rooms
-                that inspire you
+    <AnimatedPage>
+      <MainWrapper>
+        <h4>Набори</h4>
+        <Gridwrapper className="gridWrapper">
+          <div className="card">
+            <img src={basic} />
+            <div className="paddin-gap">
+              <h6 className="marg">Набір Basic</h6>
+              <p className="descrp">
+                Час роботи при нагрузці 100 ватт: 23.5 год.
               </p>
-              <a href="#">Explore More</a>
-            </Content>
-            <InnerPeace className="innerpeace">
-              <div>
-                <img src={Peace} alt="peace" />
-                <div className="mainbox">
-                  <div className="contentHolder">
-                    <p>01 Bedroom</p>
-                    <h4 href="#">Inner Peace</h4>
-                  </div>
-                </div>
-                <a href="#" className="arrow">
-                  <img src={Arrow} alt="arrow" />
-                </a>
+              <p className="descrp">Ємність аккумулятора (Ah) 100</p>
+              <p className="descrp">Тип аккумулятора Гель</p>
+              <p className="descrp">Підключення аккумуляторів послідовне</p>
+              <p className="descrp">Кількість аккумуляторів 2 шт</p>
+              <p className="descrp">Вольтаж 24V</p>
+              <p className="descrp">Потужність акумуляторів 2400 Ватт</p>
+              <p className="descrp">Інвертор EASUN 3000W</p>
+              <p className="descrp">Потужність інвертора 3kw</p>
+              <div className="priceHolder">
+                <p className="price">48 500 грн</p>
+                <p className="discount">50 000 грн</p>
               </div>
-              <Slider {...settings} className="sliderBeau">
-                <img src={Sliderpic} alt="sl" className="sliderpic12" />
-                <img src={Sliderpic} alt="sl" className="sliderpic12" />
-                <img src={Sliderpic} alt="sl" className="sliderpic12" />
-                <img src={Sliderpic} alt="sl" className="sliderpic12" />
-              </Slider>
-            </InnerPeace>
-          </Container>
-        </Mainwrapper>
-      </AnimatedPage>
-    </div>
+            </div>
+          </div>
+          <div className="card">
+            <img src={pro} />
+            <div className="paddin-gap">
+              <h6 className="marg">Набір Pro</h6>
+              <p className="descrp">
+                Час роботи при нагрузці 100 ватт: 26 год.
+              </p>
+              <p className="descrp">Ємність аккумулятора (Ah) 110</p>
+              <p className="descrp">Тип аккумулятора Гель</p>
+              <p className="descrp">Підключення аккумуляторів послідовне</p>
+              <p className="descrp">Кількість аккумуляторів 2 шт</p>
+              <p className="descrp">Вольтаж 24V</p>
+              <p className="descrp">Потужність акумуляторів 2640 Ватт</p>
+              <p className="descrp">Інвертор PowMr 3200W</p>
+              <p className="descrp">Потужність інвертора 3kw</p>
+              <div className="priceHolder">
+                <p className="price">51 110 грн</p>
+                <p className="discount">53 800 грн</p>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <img src={blackout} className="blackoutt" />
+            <div className="paddin-gap">
+              <h6 className="marg">Набір Blackout</h6>
+              <p className="descrp">
+                Час роботи при нагрузці 100 ватт: 67 год.
+              </p>
+              <p className="descrp">Ємність аккумулятора (Ah) 140</p>
+              <p className="descrp">Тип аккумулятора Гель</p>
+              <p className="descrp">Підключення аккумуляторів послідовне</p>
+              <p className="descrp">Кількість аккумуляторів 4 шт</p>
+              <p className="descrp">Вольтаж 48V</p>
+              <p className="descrp">Потужність акумуляторів 6720 Ватт</p>
+              <p className="descrp">Інвертор EASUN 3000W</p>
+              <p className="descrp">Потужність інвертора 3kw</p>
+              <div className="priceHolder">
+                <p className="price">92 150 грн</p>
+                <p className="discount">97 000 грн</p>
+              </div>
+            </div>
+          </div>
+        </Gridwrapper>
+        <h3>Замовлення за телефоном: 095 494 10 10</h3>
+      </MainWrapper>
+    </AnimatedPage>
   );
 };
-export default Beau;
+export default OurProducts;

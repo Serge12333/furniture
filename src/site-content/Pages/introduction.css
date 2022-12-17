@@ -95,8 +95,7 @@
 }
 
 @media (max-width: 1509px) {
-  .slick-slider .slick-arrow,
-  .dotscustom {
+  .slick-slider {
     display: none !important;
   }
 
@@ -136,6 +135,10 @@
 @media (max-width: 504px) {
   .innercontent h6:after {
     left: 155px !important;
+  }
+  .quality {
+    padding-top: 0px !important;
+    margin: 0 20px;
   }
   .shop {
     padding: 30px !important;
